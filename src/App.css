@@ -11,12 +11,6 @@ main {
   background-color: #f0f8ff;
 }
 
-img {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
 button {
   background-color:#30CACB;
   border: none;

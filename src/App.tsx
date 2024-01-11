@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 
-const LogoBichinhosDaTi = new URL('./assets/Bichinhos-da-ti.webp', import.meta.url).href;
-
 function App() {
   const [result, setResult] = useState('');
 
@@ -84,7 +82,7 @@ function App() {
     <div className='container'>
       <main>
         <img 
-          src={LogoBichinhosDaTi}
+          src="./assets/bichinhos-da-ti.webp"
           alt="Bichinhos da TI" 
           width="200"
           height="200"

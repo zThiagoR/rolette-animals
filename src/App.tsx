@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-import LogoBichinhosDaTi from './assets/Bichinhos-da-ti.webp';
+const LogoBichinhosDaTi = new URL('./assets/Bichinhos-da-ti.webp', import.meta.url).href;
 
 function App() {
   const [result, setResult] = useState('');

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+import LogoBichinhosDaTi from './assets/Bichinhos-da-ti.webp';
+
 function App() {
   const [result, setResult] = useState('');
 
@@ -82,7 +84,7 @@ function App() {
     <div className='container'>
       <main>
         <img 
-          src="./assets/Bichinhos-da-ti.webp" 
+          src={LogoBichinhosDaTi}
           alt="Bichinhos da TI" 
           width="200"
           height="200"

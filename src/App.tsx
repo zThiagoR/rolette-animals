@@ -81,7 +81,12 @@ function App() {
   return (
     <div className='container'>
       <main>
-        <img src="https://imgur.com/21EZcGC.png" alt="Bichinhos da TI"/>
+        <img 
+          src="./assets/Bichinhos-da-ti.webp" 
+          alt="Bichinhos da TI" 
+          width="200"
+          height="200"
+        />
         <h1>Qual animal da TI você seria?</h1>
         <button 
           onClick={discoverAnimalAndStack}

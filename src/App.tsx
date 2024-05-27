@@ -17,7 +17,7 @@ function App() {
         <div className="container">
             <main>
                 <img
-                    src="./assets/bichinhos-da-ti.webp"
+                    src="./assets/bichinhosdati.webp"
                     alt="Bichinhos da TI"
                     width="200"
                     height="200"
@@ -38,7 +38,7 @@ function App() {
                 <a href="https://github.com/zThiagoR">Thiago M</a>.
                 <br />
                 Venha participar da{" "}
-                <a href="https://discord.gg/NeH77NaVrv">
+                <a href="https://discord.gg/NmmP4EcdRd">
                     Comunidade Bichinhos da TI
                 </a>{" "}
                 no Discord!

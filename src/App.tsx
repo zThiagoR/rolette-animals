@@ -17,13 +17,13 @@ function App() {
         setResult({ animal: chosenAnimal, stack: chosenStack });
     };
 
-    const handleMouseDown = () => {
+    const handlePressStart = () => {
         timerRef.current = window.setTimeout(() => {
             setDropdownVisible(true);
         }, 2000);
     };
 
-    const handleMouseUp = () => {
+    const handlePressEnd = () => {
         if (timerRef.current) {
             clearTimeout(timerRef.current);
             timerRef.current = null;
@@ -56,9 +56,12 @@ function App() {
                 />
                 <h1>Qual animal da TI você seria?</h1>
                 <button
-                    onMouseDown={handleMouseDown}
-                    onMouseUp={handleMouseUp}
+                    onMouseDown={handlePressStart}
+                    onMouseUp={handlePressEnd}
                     onMouseLeave={handleMouseLeave}
+                    onTouchStart={handlePressStart}
+                    onTouchEnd={handlePressEnd}
+                    onTouchCancel={handleMouseLeave}
                 >
                     {result.animal && result.stack ? "Descobrir outro" : "Descobrir"}
                 </button>

@@ -8,11 +8,11 @@ main {
   flex: 1;
   text-align: center;
   padding: 20px;
-  background-color: #f0f8ff;
+  background-color: #F76B00;
 }
 
 button {
-  background-color: #30CACB;
+  background-color: #47b0e7;
   border: none;
   color: white;
   
@@ -38,7 +38,7 @@ button:active {
 
 p {
   font-size: 1.4em;
-  color: #333;
+  color: #ffffff;
   margin-top: 20px;
 }
 
@@ -46,20 +46,13 @@ p {
   animation: fadeInUp 0.5s ease-in-out;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 strong {
   font-weight: bold;
-  color: #0fa982;
+  color: #161966;
+}
+
+h1 {
+  color: #fee0bc;
 }
 
 footer {
@@ -82,4 +75,85 @@ footer a {
 
 footer a:hover {
   color: #ffffff;
+}
+
+.dropdown {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dropdown select {
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid #47b0e7;
+  font-size: 1em;
+  font-weight: bold; 
+  background-color: #ffffff; 
+  color: #000000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  min-width: 200px; 
+  appearance: none; 
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDEwIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMEw1IDVMMTAgMEgwWiIgZmlsbD0iIzQ3YjBlNyIvPjwvc3ZnPg==');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.dropdown select:focus {
+  outline: none;
+  border-color: #3698c7;
+  box-shadow: 0 0 5px rgba(54, 152, 199, 0.5);
+}
+
+.dropdown select option {
+  padding: 8px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.dropdown button {
+  background-color: #47b0e7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.dropdown button:hover {
+  background-color: #3698c7;
+}
+
+.dropdown select option:hover {
+  background-color: #47b0e7;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
